@@ -7,7 +7,7 @@ This repository contains a barebones Nginx configuration and can be used to prot
 ## Spin up Docker
 
 ```
-docker run --rm --name nginx-prototype -v ~/path/to/content/geoip:/usr/share/nginx/geoip:ro -v ~/path/to/content/site:/usr/share/nginx/html/site:ro -v ~/tmp/site/nginx.conf:/etc/nginx/nginx.conf -p 8080:80 nginx:latest
+docker run --rm --name nginx-prototype -v $PWD/content/geoip:/usr/share/nginx/geoip:ro -v $PWD/content/site:/usr/share/nginx/html/site:ro -v $PWD/nginx.conf:/etc/nginx/nginx.conf -p 8080:80 nginx:latest
 ```
 
 ## Spin up Python backend
